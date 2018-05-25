@@ -32,16 +32,15 @@ def setup_environment(check_deps=False):
 
         if missing_deps:
 
-            #install_deps = query_yes_no("Do you want to install them?", default="no")
-			#install_deps = True
+            install_deps = query_yes_no("Do you want to install them?", default="no")
 
-            #if install_deps:
+            if install_deps:
                 dependencies.install_packages(missing_deps)
                 logger.info("Dependencies installed. Please launch Faraday Server again.")
                 sys.exit(0)
-            #else:
-            #    logger.error("Dependencies not met. Please refer to the documentation in order to install them. [%s]",
-            #                 ", ".join(missing_deps))
+            else:
+                logger.error("Dependencies not met. Please refer to the documentation in order to install them. [%s]",
+                             ", ".join(missing_deps))
 
         logger.info("Dependencies met")
 
