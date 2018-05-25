@@ -33,7 +33,7 @@ def setup_environment(check_deps=False):
         if missing_deps:
 
             #install_deps = query_yes_no("Do you want to install them?", default="no")
-			install_deps = true
+			install_deps = True
 
             if install_deps:
                 dependencies.install_packages(missing_deps)
