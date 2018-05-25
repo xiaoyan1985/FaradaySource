@@ -58,7 +58,7 @@ if [ "$update" -eq 0 ]; then
 fi
 
 for pkg in build-essential ipython python-setuptools python-pip python-dev libpq-dev libffi-dev couchdb gir1.2-gtk-3.0 gir1.2-vte-2.91 gir1.2-vte-2.90 python-gobject zsh curl; do
-    sudo apt-get install -y $pkg
+    apt-get install -y $pkg
 done
 
 pip2 install -r requirements.txt
