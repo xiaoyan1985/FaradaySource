@@ -93,7 +93,7 @@ def main():
     parser.add_argument('--debug', action='store_true', help='run Faraday Server in debug mode')
     parser.add_argument('--start', action='store_true', help='run Faraday Server in background')
     parser.add_argument('--stop', action='store_true', help='stop Faraday Server')
-    parser.add_argument('--nodeps', action='store_true', help='Skip dependency check')
+    parser.add_argument('--nodeps', action='store_false', help='Skip dependency check')
     parser.add_argument('--no-setup', action='store_true', help=argparse.SUPPRESS)
 
     f = open(server.config.VERSION_FILE)
