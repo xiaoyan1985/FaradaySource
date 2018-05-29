@@ -30,15 +30,15 @@ def setup_environment(check_deps=False):
 
         logger.info("Checking dependencies...")
 
-		if missing_deps:
+        if missing_deps:
 
-			install_deps = query_yes_no("Do you want to install them?", default="no")
+            install_deps = query_yes_no("Do you want to install them?", default="no")
 
-			if install_deps:
-				dependencies.install_packages(missing_deps)
-				logger.info("Dependencies installed. Please launch Faraday Server again.")
-				sys.exit(0)
-			else:
+            if install_deps:
+                dependencies.install_packages(missing_deps)
+                logger.info("Dependencies installed. Please launch Faraday Server again.")
+                sys.exit(0)
+            else:
                 logger.error("Dependencies not met. Please refer to the documentation in order to install them. [%s]",
                              ", ".join(missing_deps))
 
@@ -117,7 +117,7 @@ def main():
     if args.ssl:
         server.config.ssl.set('enabled', 'true')
 
-    if args.no_setup:
+    if not args.no_setup:
         setup_environment(not args.nodeps)
         import_workspaces()
 
