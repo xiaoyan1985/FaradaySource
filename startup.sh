@@ -1,4 +1,4 @@
 #!/bin/bash
-couchdb start
+couchdb -b
 ./faraday-server.py
 
