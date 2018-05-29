@@ -117,7 +117,7 @@ def main():
     if args.ssl:
         server.config.ssl.set('enabled', 'true')
 
-    if not args.no_setup:
+    if args.no_setup:
         setup_environment(not args.nodeps)
         import_workspaces()
 
