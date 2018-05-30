@@ -125,16 +125,16 @@ def main():
 
     if args.start:
         # Web configuration file generation
-        server.config.gen_web_config()
+        #server.config.gen_web_config()
 
         # Reports DB creation
-        server.couchdb.push_reports()
+        #server.couchdb.push_reports()
 
-        server.database.initialize()
-        server.app.setup()
-        web_server = server.web.WebServer(enable_ssl=args.ssl)
+        #server.database.initialize()
+        #server.app.setup()
+        #web_server = server.web.WebServer(enable_ssl=args.ssl)
 
-        daemonize.create_pid_file()
+        #daemonize.create_pid_file()
 
         # Starts a new process on background with --ignore-setup
         # and without --start nor --stop

@@ -6,4 +6,4 @@ chmod 777 ../.faraday/config/config.xml
 couchdb -b
 #./faraday-server.py
 python2 ./faraday-server.py --start
-#./faraday.py
+python2 ./faraday.py
