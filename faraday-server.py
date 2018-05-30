@@ -10,6 +10,8 @@ import subprocess
 import server.config
 import server.couchdb
 import server.utils.logger
+import server.app
+import server.web
 from server.utils import daemonize
 from utils import dependencies
 from utils.user_input import query_yes_no
