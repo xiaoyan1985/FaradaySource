@@ -7,4 +7,4 @@ chmod 777 ../.faraday/config/server.ini
 #./faraday-server.py
 python2 ./faraday-server.py --debug
 python2 ./faraday-server.py --start --debug
-python2 ./faraday.py --gui=no-gui 
+python2 ./faraday.py --gui=no-gui --debug
