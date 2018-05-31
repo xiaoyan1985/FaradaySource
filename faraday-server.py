@@ -83,7 +83,7 @@ def run_server(args):
 
     daemonize.create_pid_file()
     logger.info('Faraday Server is ready')
-    web_server.run()
+    #web_server.run()
 
 
 def main():
