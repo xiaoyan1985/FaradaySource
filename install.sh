@@ -54,7 +54,7 @@ fi
 
 if [ "$update" -eq 0 ]; then
     apt-get update
-    update=1
+    update=1 
 fi
 
 for pkg in build-essential ipython python-setuptools python-pip python-dev libpq-dev libffi-dev couchdb gir1.2-gtk-3.0 gir1.2-vte-2.91 gir1.2-vte-2.90 python-gobject zsh curl; do

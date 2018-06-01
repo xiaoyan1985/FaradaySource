@@ -13,7 +13,7 @@ from logging import NOTSET, DEBUG, INFO, WARNING, ERROR, CRITICAL
 from config import globals as CONSTANTS
 from config.configuration import getInstanceConfiguration
 
-LOGGING_LEVEL = INFO
+LOGGING_LEVEL = INFO 
 
 FARADAY_BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 FARADAY_SERVER_DBS_DIR = os.path.join(FARADAY_BASE, 'server/workspaces')
