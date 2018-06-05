@@ -1,5 +1,5 @@
 <faraday>
-  <api_con_info_host>localhost</api_con_info_host>
+  <api_con_info_host>0.0.0.0</api_con_info_host>
   <api_con_info_port>9876</api_con_info_port>
   <api_restful_con_info_port>9977</api_restful_con_info_port>
   <appname>Faraday - Penetration Test IDE Community</appname>
