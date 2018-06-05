@@ -33,7 +33,7 @@ class GuiApp(FaradayUi):
         workspace = args.workspace
         try:
             ws = super(GuiApp, self).openWorkspace(workspace)
-			workspace = ws.name
+            workspace = ws.name
         except Exception as e:
             #getLogger(self).error(
             #    ("Your last workspace %s is not accessible, "
@@ -43,11 +43,11 @@ class GuiApp(FaradayUi):
             #        "to set a valid couch_uri and last_workspace")
             #getLogger(self).error(str(e))
             #return -1
-			try:
-			    manager = self.getWorkspaceManager()
-			    name = manager.createWorkspace(name, description)
-			    self.change_workspace(name)
-				workspace = name
+            try:
+                manager = self.getWorkspaceManager()
+                name = manager.createWorkspace(name, description)
+                self.change_workspace(name)
+                workspace = name
             except Exception as e:
                 getLogger(self).error(
                     ("Your last workspace %s is not accessible, "
