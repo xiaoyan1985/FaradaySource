@@ -86,3 +86,22 @@ class FaradayUi(object):
         except Exception as e:
             raise e
         return ws
+    def createWorkspace(self, name, ):
+        """Open a workspace by name. Returns the workspace of raises an
+        exception if for some reason it couldn't.
+        """
+        if self.report_manager:
+            self.report_manager.stop()
+            self.report_manager.join()
+        try:
+            ws = self.getWorkspaceManager().createWorkspace(name, "")
+            self.change_workspace(ws.name)
+            self.report_manager = ReportManager(
+                10,
+                name,
+                self.plugin_controller
+            )
+            self.report_manager.start()
+        except Exception as e:
+            raise e
+        return ws
