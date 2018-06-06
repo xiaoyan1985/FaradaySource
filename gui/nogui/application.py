@@ -46,7 +46,7 @@ class GuiApp(FaradayUi):
                 ws = super(GuiApp, self).createWorkspace(workspace)
             except Exception as e:
                 getLogger(self).error(
-                    ("Your last workspace %s is create fail, "
+                    ("Your last workspace %s creation failed, "
                      "check configuration.") % workspace)
                 getLogger(self).error(
                         "You may try and go to ~/.faraday/config/user.xml "
