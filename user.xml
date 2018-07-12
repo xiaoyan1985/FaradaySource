@@ -25,7 +25,7 @@
   <repo_user>u</repo_user>
   <report_path>/root/.faraday/report/</report_path>
   <shell_maximized>0</shell_maximized>
-  <last_workspace>test_ws1</last_workspace>
+  <last_workspace>test_ws</last_workspace>
   <couch_uri>http://admin:admin12345@10.128.1.28:5985</couch_uri>
   <couch_is_replicated>True</couch_is_replicated>
   <couch_replics />
