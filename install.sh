@@ -61,7 +61,7 @@ for pkg in build-essential ipython python-setuptools python-pip python-dev libpq
     #sudo apt-get install -y $pkg
     apt-get install -y $pkg
 done
-
-pip2 install -r requirements.txt
+pip  install --upgrade pip
+pip  install -r requirements.txt
 
 echo "You can now run Faraday, enjoy!"
