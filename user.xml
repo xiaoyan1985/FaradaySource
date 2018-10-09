@@ -26,7 +26,7 @@
   <report_path>/root/.faraday/report/</report_path>
   <shell_maximized>0</shell_maximized>
   <last_workspace>test_ws</last_workspace>
-  <couch_uri>http://admin:admin12345@172.17.0.10:5985</couch_uri>
+  <couch_uri>http://admin:admin12345@172.17.0.5:5985</couch_uri>
   <couch_is_replicated>True</couch_is_replicated>
   <couch_replics />
   <version>2.7.2</version>
